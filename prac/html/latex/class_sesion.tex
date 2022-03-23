@@ -1,0 +1,502 @@
+\hypertarget{class_sesion}{}\section{Referencia de la Clase Sesion}
+\label{class_sesion}\index{Sesion@{Sesion}}
+
+
+Representa una \mbox{\hyperlink{class_sesion}{Sesion}} de la plataforma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}{Sesion}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto con la lectura de los problemas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a0fc0dfafa8e3bd98e7d18dff68eb82f2}{act\+\_\+problemas\+\_\+enviables}} (const string \&p, \mbox{\hyperlink{class_usuario}{Usuario}} \&usuario) const
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables sucesores de un problema p (este incluido), que pertenecen a una sesion, de un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a277a3775d1e19373e3ca507b819b5cc8}{problemas\+\_\+enviables}} (\mbox{\hyperlink{class_usuario}{Usuario}} \&usuario) const
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables, que pertenecen a una sesion, de un usuario. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_sesion_ac5cabac266d233381c6c94391fe85769}{primera}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el identificador del primer problema de una sesion. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_sesion_ae0bb567c32173fab7938766f4dd0fb1a}{id\+\_\+problema}} (int i) const
+\begin{DoxyCompactList}\small\item\em Devuelve el identificador del problema con índice i del vector de problemas de una sesion. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sesion_a32dcea163badd79a3ffe111957741de9}{num\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el nº de problemas de una sesion. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sesion_a5b175e13592d600ccc17a80789735382}{existe\+\_\+problema}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulta si existe un problema con el identificador p en una sesion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}{escribir\+\_\+sesion}} () const
+\begin{DoxyCompactList}\small\item\em Imprime una sesion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_sesion_a975a083d65d04704efd0690de9d7f695}{cerca}} (const Bin\+Tree$<$ string $>$ \&a, const string \&p)
+\begin{DoxyCompactList}\small\item\em Comprueba si existe un nodo p en un Bin\+Tree. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sesion_ac3711bf39cf87739aff96ccebd6da0bc}{leer\+\_\+arbol\+\_\+preorden}} (Bin\+Tree$<$ string $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Realiza la lectura de un Bin\+Tree en preorden. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sesion_aff16aa5e480925c7827221e326a345dc}{escribir\+\_\+bintree\+\_\+postorden}} (const Bin\+Tree$<$ string $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Imprime un Bin\+Tree en postorden con los hijos entre paréntesis. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sesion_a9ed9478b2d860d8d713e19823febeaf3}{vect\+\_\+problemas}} (vector$<$ string $>$ \&v, const Bin\+Tree$<$ string $>$ \&a)
+\begin{DoxyCompactList}\small\item\em Deja en un vector con todos los nodos de un Bin\+Tree. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sesion_ad391d505577569f30635f19a0f36c9a0}{act\+\_\+enviables\+\_\+i}} (const Bin\+Tree$<$ string $>$ \&a, \mbox{\hyperlink{class_usuario}{Usuario}} \&usuario)
+\begin{DoxyCompactList}\small\item\em Actualiza todos los problemas enviables, que pertenecen a un Bin\+Tree, de un usuario. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_sesion_a7e64b66ecf1ad363dd0c394ec59eaa91}{act\+\_\+enviables}} (const Bin\+Tree$<$ string $>$ \&a, const string \&p, \mbox{\hyperlink{class_usuario}{Usuario}} \&usuario)
+\begin{DoxyCompactList}\small\item\em Actualiza los problemas enviables sucesores de un problema p (este incluido), que pertenecen a un Bin\+Tree, de un usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+Bin\+Tree$<$ string $>$ \mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}}
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}{vect\+\_\+p}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa una \mbox{\hyperlink{class_sesion}{Sesion}} de la plataforma. 
+
+Especificación de la clase \mbox{\hyperlink{class_sesion}{Sesion}}.
+
+Está formada por un Bin\+Tree de los identificadores de los problemas y un vector con los identificadores de estos problemas. 
+
+Definición en la línea 28 del archivo Sesion.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}\label{class_sesion_adf5a84efa8e2629b30ad89df74cfc0a2}} 
+\index{Sesion@{Sesion}!Sesion@{Sesion}}
+\index{Sesion@{Sesion}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{Sesion()}{Sesion()}}
+{\footnotesize\ttfamily Sesion\+::\+Sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto con la lectura de los problemas. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una sesion con sus problemas leídos 
+\end{DoxyPostcond}
+
+
+Definición en la línea 121 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+121                      \{
+122         \mbox{\hyperlink{class_sesion_ac3711bf39cf87739aff96ccebd6da0bc}{leer\_arbol\_preorden}}(\mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}});
+123         \mbox{\hyperlink{class_sesion_a9ed9478b2d860d8d713e19823febeaf3}{vect\_problemas}}(\mbox{\hyperlink{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}{vect\_p}}, \mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}});
+124       \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_sesion_a975a083d65d04704efd0690de9d7f695}\label{class_sesion_a975a083d65d04704efd0690de9d7f695}} 
+\index{Sesion@{Sesion}!cerca@{cerca}}
+\index{cerca@{cerca}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{cerca()}{cerca()}}
+{\footnotesize\ttfamily bool Sesion\+::cerca (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ string $>$ \&}]{a,  }\item[{const string \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Comprueba si existe un nodo p en un Bin\+Tree. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve cierto si encuenta p en el Bin\+Tree a; falso en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 20 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+20                                                                   \{
+21         \textcolor{keywordflow}{if} (a.empty()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+22         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} (a.value() == p)
+23                     or \mbox{\hyperlink{class_sesion_a975a083d65d04704efd0690de9d7f695}{cerca}}(a.left(), p)
+24                     or \mbox{\hyperlink{class_sesion_a975a083d65d04704efd0690de9d7f695}{cerca}}(a.right(), p);
+25       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_ac3711bf39cf87739aff96ccebd6da0bc}\label{class_sesion_ac3711bf39cf87739aff96ccebd6da0bc}} 
+\index{Sesion@{Sesion}!leer\+\_\+arbol\+\_\+preorden@{leer\+\_\+arbol\+\_\+preorden}}
+\index{leer\+\_\+arbol\+\_\+preorden@{leer\+\_\+arbol\+\_\+preorden}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{leer\+\_\+arbol\+\_\+preorden()}{leer\_arbol\_preorden()}}
+{\footnotesize\ttfamily void Sesion\+::leer\+\_\+arbol\+\_\+preorden (\begin{DoxyParamCaption}\item[{Bin\+Tree$<$ string $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Realiza la lectura de un Bin\+Tree en preorden. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha realizado la lectura del Bin\+Tree en preorden 
+\end{DoxyPostcond}
+
+
+Definición en la línea 31 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+31                                                          \{
+32         \textcolor{keywordtype}{string} x;
+33         cin >> x;
+34         \textcolor{keywordflow}{if} (x != \textcolor{stringliteral}{"0"}) \{
+35           BinTree<string> a1;
+36           BinTree<string> a2;
+37 
+38           \mbox{\hyperlink{class_sesion_ac3711bf39cf87739aff96ccebd6da0bc}{leer\_arbol\_preorden}}(a1);
+39           \mbox{\hyperlink{class_sesion_ac3711bf39cf87739aff96ccebd6da0bc}{leer\_arbol\_preorden}}(a2);
+40           a = BinTree<string> (x, a1, a2);
+41         \}
+42       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_aff16aa5e480925c7827221e326a345dc}\label{class_sesion_aff16aa5e480925c7827221e326a345dc}} 
+\index{Sesion@{Sesion}!escribir\+\_\+bintree\+\_\+postorden@{escribir\+\_\+bintree\+\_\+postorden}}
+\index{escribir\+\_\+bintree\+\_\+postorden@{escribir\+\_\+bintree\+\_\+postorden}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{escribir\+\_\+bintree\+\_\+postorden()}{escribir\_bintree\_postorden()}}
+{\footnotesize\ttfamily void Sesion\+::escribir\+\_\+bintree\+\_\+postorden (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ string $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Imprime un Bin\+Tree en postorden con los hijos entre paréntesis. 
+
+\begin{DoxyPrecond}{Precondición}
+El Bin\+Tree a no es vacío 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime el Bin\+Tree a en postorden con los hijos entre paréntesis 
+\end{DoxyPostcond}
+
+
+Definición en la línea 48 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+48                                                                       \{
+49         BinTree<string> a1 = a.left();
+50         BinTree<string> a2 = a.right();
+51 
+52         \textcolor{keywordflow}{if} (not a1.empty()) \{
+53           cout << \textcolor{stringliteral}{"("};
+54           \mbox{\hyperlink{class_sesion_aff16aa5e480925c7827221e326a345dc}{escribir\_bintree\_postorden}}(a1);
+55           cout << \textcolor{stringliteral}{")"};
+56         \}
+57         \textcolor{keywordflow}{if} (not a2.empty()) \{
+58           cout << \textcolor{stringliteral}{"("};
+59           \mbox{\hyperlink{class_sesion_aff16aa5e480925c7827221e326a345dc}{escribir\_bintree\_postorden}}(a2);
+60           cout << \textcolor{stringliteral}{")"};
+61         \}
+62         cout << a.value();
+63       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a9ed9478b2d860d8d713e19823febeaf3}\label{class_sesion_a9ed9478b2d860d8d713e19823febeaf3}} 
+\index{Sesion@{Sesion}!vect\+\_\+problemas@{vect\+\_\+problemas}}
+\index{vect\+\_\+problemas@{vect\+\_\+problemas}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{vect\+\_\+problemas()}{vect\_problemas()}}
+{\footnotesize\ttfamily void Sesion\+::vect\+\_\+problemas (\begin{DoxyParamCaption}\item[{vector$<$ string $>$ \&}]{v,  }\item[{const Bin\+Tree$<$ string $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Deja en un vector con todos los nodos de un Bin\+Tree. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Deja en el vector v todos los nodos del Bin\+Tree a 
+\end{DoxyPostcond}
+
+
+Definición en la línea 69 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+69                                                                              \{
+70         \textcolor{keywordflow}{if} (not a.empty()) \{
+71           v.push\_back(a.value());
+72           \mbox{\hyperlink{class_sesion_a9ed9478b2d860d8d713e19823febeaf3}{vect\_problemas}}(v, a.left());
+73           \mbox{\hyperlink{class_sesion_a9ed9478b2d860d8d713e19823febeaf3}{vect\_problemas}}(v, a.right());
+74         \}
+75       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_ad391d505577569f30635f19a0f36c9a0}\label{class_sesion_ad391d505577569f30635f19a0f36c9a0}} 
+\index{Sesion@{Sesion}!act\+\_\+enviables\+\_\+i@{act\+\_\+enviables\+\_\+i}}
+\index{act\+\_\+enviables\+\_\+i@{act\+\_\+enviables\+\_\+i}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{act\+\_\+enviables\+\_\+i()}{act\_enviables\_i()}}
+{\footnotesize\ttfamily void Sesion\+::act\+\_\+enviables\+\_\+i (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ string $>$ \&}]{a,  }\item[{\mbox{\hyperlink{class_usuario}{Usuario}} \&}]{usuario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Actualiza todos los problemas enviables, que pertenecen a un Bin\+Tree, de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se actualizan los problemas enviables de un usuario a partir del Bin\+Tree 
+\end{DoxyPostcond}
+
+
+Definición en la línea 82 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+82                                                                              \{
+83         \textcolor{keywordflow}{if} (not a.empty()) \{
+84           \textcolor{keywordflow}{if} (not usuario.\mbox{\hyperlink{class_usuario_a6f9608eac6a6a05d850dcad07bdf37f3}{ha\_resuelto\_problema}}(a.value())) \{
+85             usuario.\mbox{\hyperlink{class_usuario_a4dedcdcfe3d1769d6d2106d9fb2f7e51}{agregar\_problema\_disp}}(a.value());
+86           \}
+87           \textcolor{keywordflow}{else} \{
+88             \mbox{\hyperlink{class_sesion_ad391d505577569f30635f19a0f36c9a0}{act\_enviables\_i}}(a.left(), usuario);
+89             \mbox{\hyperlink{class_sesion_ad391d505577569f30635f19a0f36c9a0}{act\_enviables\_i}}(a.right(), usuario);
+90           \}
+91         \}
+92       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a7e64b66ecf1ad363dd0c394ec59eaa91}\label{class_sesion_a7e64b66ecf1ad363dd0c394ec59eaa91}} 
+\index{Sesion@{Sesion}!act\+\_\+enviables@{act\+\_\+enviables}}
+\index{act\+\_\+enviables@{act\+\_\+enviables}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{act\+\_\+enviables()}{act\_enviables()}}
+{\footnotesize\ttfamily void Sesion\+::act\+\_\+enviables (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ string $>$ \&}]{a,  }\item[{const string \&}]{p,  }\item[{\mbox{\hyperlink{class_usuario}{Usuario}} \&}]{usuario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Actualiza los problemas enviables sucesores de un problema p (este incluido), que pertenecen a un Bin\+Tree, de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se actualizan los problemas enviables de un usuario a partir del Bin\+Tree 
+\end{DoxyPostcond}
+
+
+Definición en la línea 99 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+99                                                                                             \{
+100         \textcolor{keywordflow}{if} (not a.empty()) \{
+101           \textcolor{keywordflow}{if} (a.value() == p) \{
+102             \textcolor{keywordflow}{if} (not usuario.\mbox{\hyperlink{class_usuario_a6f9608eac6a6a05d850dcad07bdf37f3}{ha\_resuelto\_problema}}(p)) \{
+103               usuario.\mbox{\hyperlink{class_usuario_a4dedcdcfe3d1769d6d2106d9fb2f7e51}{agregar\_problema\_disp}}(p);
+104             \}
+105             \textcolor{keywordflow}{else} \{
+106               \mbox{\hyperlink{class_sesion_ad391d505577569f30635f19a0f36c9a0}{act\_enviables\_i}}(a.left(), usuario);
+107               \mbox{\hyperlink{class_sesion_ad391d505577569f30635f19a0f36c9a0}{act\_enviables\_i}}(a.right(), usuario);
+108             \}
+109           \}
+110           \textcolor{keywordflow}{else} \{
+111             \mbox{\hyperlink{class_sesion_a7e64b66ecf1ad363dd0c394ec59eaa91}{act\_enviables}}(a.left(), p, usuario);
+112             \mbox{\hyperlink{class_sesion_a7e64b66ecf1ad363dd0c394ec59eaa91}{act\_enviables}}(a.right(), p, usuario);
+113           \}
+114         \}
+115       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a0fc0dfafa8e3bd98e7d18dff68eb82f2}\label{class_sesion_a0fc0dfafa8e3bd98e7d18dff68eb82f2}} 
+\index{Sesion@{Sesion}!act\+\_\+problemas\+\_\+enviables@{act\+\_\+problemas\+\_\+enviables}}
+\index{act\+\_\+problemas\+\_\+enviables@{act\+\_\+problemas\+\_\+enviables}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{act\+\_\+problemas\+\_\+enviables()}{act\_problemas\_enviables()}}
+{\footnotesize\ttfamily void Sesion\+::act\+\_\+problemas\+\_\+enviables (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{\mbox{\hyperlink{class_usuario}{Usuario}} \&}]{usuario }\end{DoxyParamCaption}) const}
+
+
+
+Actualiza los problemas enviables sucesores de un problema p (este incluido), que pertenecen a una sesion, de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Actualiza los problemas enviables sucesores de un problema p (este incluido), que pertenecen al parámetro implícito, del usuario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 133 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+133                                                                                   \{
+134         \mbox{\hyperlink{class_sesion_a7e64b66ecf1ad363dd0c394ec59eaa91}{act\_enviables}}(\mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}}, p, usuario);
+135       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a277a3775d1e19373e3ca507b819b5cc8}\label{class_sesion_a277a3775d1e19373e3ca507b819b5cc8}} 
+\index{Sesion@{Sesion}!problemas\+\_\+enviables@{problemas\+\_\+enviables}}
+\index{problemas\+\_\+enviables@{problemas\+\_\+enviables}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{problemas\+\_\+enviables()}{problemas\_enviables()}}
+{\footnotesize\ttfamily void Sesion\+::problemas\+\_\+enviables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_usuario}{Usuario}} \&}]{usuario }\end{DoxyParamCaption}) const}
+
+
+
+Actualiza los problemas enviables, que pertenecen a una sesion, de un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Actualiza los problemas enviables, que pertenecen al parámetro implícito, del usuario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 142 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+142                                                              \{
+143         \mbox{\hyperlink{class_sesion_ad391d505577569f30635f19a0f36c9a0}{act\_enviables\_i}}(\mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}}, usuario);
+144       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_ac5cabac266d233381c6c94391fe85769}\label{class_sesion_ac5cabac266d233381c6c94391fe85769}} 
+\index{Sesion@{Sesion}!primera@{primera}}
+\index{primera@{primera}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{primera()}{primera()}}
+{\footnotesize\ttfamily string Sesion\+::primera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el identificador del primer problema de una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito contiene 1 o más problemas 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el identificador del primer problema del parámetro implícito 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_sesion_ae0bb567c32173fab7938766f4dd0fb1a}\label{class_sesion_ae0bb567c32173fab7938766f4dd0fb1a}} 
+\index{Sesion@{Sesion}!id\+\_\+problema@{id\+\_\+problema}}
+\index{id\+\_\+problema@{id\+\_\+problema}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{id\+\_\+problema()}{id\_problema()}}
+{\footnotesize\ttfamily string Sesion\+::id\+\_\+problema (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el identificador del problema con índice i del vector de problemas de una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+El índice i (entero) es $>$ 0 y $<$ numero de problemas del parámetro implícito 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el identificador del problema con índice i del vector de problemas del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 153 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+153                                             \{
+154         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}{vect\_p}}[i];
+155       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a32dcea163badd79a3ffe111957741de9}\label{class_sesion_a32dcea163badd79a3ffe111957741de9}} 
+\index{Sesion@{Sesion}!num\+\_\+problemas@{num\+\_\+problemas}}
+\index{num\+\_\+problemas@{num\+\_\+problemas}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{num\+\_\+problemas()}{num\_problemas()}}
+{\footnotesize\ttfamily int Sesion\+::num\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el nº de problemas de una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el nº de problemas del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 161 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+161                                       \{
+162         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}{vect\_p}}.size();
+163       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a5b175e13592d600ccc17a80789735382}\label{class_sesion_a5b175e13592d600ccc17a80789735382}} 
+\index{Sesion@{Sesion}!existe\+\_\+problema@{existe\+\_\+problema}}
+\index{existe\+\_\+problema@{existe\+\_\+problema}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{existe\+\_\+problema()}{existe\_problema()}}
+{\footnotesize\ttfamily bool Sesion\+::existe\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta si existe un problema con el identificador p en una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve cierto si existe un problema con identificador p en el parámetro implícito; falso en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 170 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+170                                                         \{
+171         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sesion_a975a083d65d04704efd0690de9d7f695}{cerca}}(\mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}}, p);
+172       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}\label{class_sesion_a0472395ecd329355cccd46b3d3e8a8a0}} 
+\index{Sesion@{Sesion}!escribir\+\_\+sesion@{escribir\+\_\+sesion}}
+\index{escribir\+\_\+sesion@{escribir\+\_\+sesion}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{escribir\+\_\+sesion()}{escribir\_sesion()}}
+{\footnotesize\ttfamily void Sesion\+::escribir\+\_\+sesion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime una sesion. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime el nº de problemas que la forman y los identificadores de dichos problemas, siguiendo su estructura de prerequisitos en postorden 
+\end{DoxyPostcond}
+
+
+Definición en la línea 181 del archivo Sesion.\+cc.
+
+
+\begin{DoxyCode}
+181                                          \{
+182         cout << \mbox{\hyperlink{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}{vect\_p}}.size() << \textcolor{stringliteral}{" ("};
+183         \mbox{\hyperlink{class_sesion_aff16aa5e480925c7827221e326a345dc}{escribir\_bintree\_postorden}}(\mbox{\hyperlink{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}{problemas}});
+184         cout << \textcolor{stringliteral}{")"} << endl;
+185       \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}\label{class_sesion_a7125fb9a733e06305e8e8889926b8d1b}} 
+\index{Sesion@{Sesion}!problemas@{problemas}}
+\index{problemas@{problemas}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{problemas}{problemas}}
+{\footnotesize\ttfamily Bin\+Tree$<$string$>$ Sesion\+::problemas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Sesion.\+hh.
+
+\mbox{\Hypertarget{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}\label{class_sesion_ab9459a157fdb5e1c2f975ba20305ae8f}} 
+\index{Sesion@{Sesion}!vect\+\_\+p@{vect\+\_\+p}}
+\index{vect\+\_\+p@{vect\+\_\+p}!Sesion@{Sesion}}
+\subsubsection{\texorpdfstring{vect\+\_\+p}{vect\_p}}
+{\footnotesize\ttfamily vector$<$string$>$ Sesion\+::vect\+\_\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Sesion.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sesion_8hh}{Sesion.\+hh}}\item 
+\mbox{\hyperlink{_sesion_8cc}{Sesion.\+cc}}\end{DoxyCompactItemize}

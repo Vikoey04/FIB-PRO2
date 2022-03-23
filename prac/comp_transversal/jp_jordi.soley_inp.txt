@@ -1,0 +1,174 @@
+59
+A01 A02 A03 A04 A05 A06 A07 A08 A09 A10
+B01 B02 B03 B04 B05 B06 B07 B08
+C01 C02 C03 C04 C05 C06 C07 C08 C09 C10
+D01 D02 D03 D04 D05
+E01 E05 E06 E07 E08 E09
+F01 F02 F03 F04 F05 F06 F07 F08 F09 F10
+G01 G02 G03 G04 G05 G06 G07 G08 G09 G10
+4
+sesion1 A01 0 0
+sesion2 A02 A03 A04 A05 0 0 0 0 0
+sesion3 A06 0 A07 0 A08 0 A09 0 0
+sesion4 A10 B01 B03 B05 0 0 B06 0 0 0 B02 0 B04 B07 0 0 B08 0 0
+3
+1 sesion1
+2 sesion1 sesion2
+3 sesion1 sesion2 sesion3
+10
+MarcAranda
+WenqiZhou
+RubenTorrente
+MarcNavarro
+JoanVazquez
+PauDuran
+JaviLopez
+JesusAndujar
+VictorMena
+LaiaLamana
+listar_problemas
+listar_sesiones
+listar_cursos
+listar_usuarios
+nuevo_problema A02
+np E04
+nuevo_problema E02
+np E03
+lp
+ns sesion6 E01 E02 0 0 E03 0 A01 0 A04 0 0 
+nueva_sesion sesion7 A07 0 E04 B03 E05 0 0 0 A10 E06 0 0 0
+ns sesion1 A02 A01 0 0 0
+ls
+nuevo_curso 2 sesion6 sesion7 
+nc 3 sesion1 sesion3 sesion7
+lc
+a MartaCampana
+alta_usuario UnaiFernandez
+a IkerPuig
+a VictorMena
+a AlvaroLopera
+lu
+i AlexGuirao 3
+i MiguelAngel 27
+i IkerPuig 1
+e IkerPuig A01 0
+e IkerPuig A01 0
+e IkerPuig A01 0
+e IkerPuig A01 1
+ep A01
+problemas_enviables IkerPuig
+pr IkerPuig
+i UnaiFernandez 3
+pe UnaiFernandez
+e UnaiFernandez A01 1
+e UnaiFernandez A02 1
+e UnaiFernandez A06 0
+e UnaiFernandez A06 1
+e UnaiFernandez A03 1
+e UnaiFernandez A04 0
+i UnaiFernandez 1
+e UnaiFernandez A07 1
+e UnaiFernandez A04 1
+e UnaiFernandez A05 1
+e UnaiFernandez A08 0
+e UnaiFernandez A08 1
+e UnaiFernandez A09 1
+pr UnaiFernandez
+i UnaiFernandez 1
+curso_usuario UnaiFernandez
+pe UnaiFernandez
+ec 3
+sp 1 A01
+sp 1 A02
+sp 2 A03
+sp 2 A05
+sp 10 Z03
+sp 10 A01
+b AdrianCaballero
+b AlvaroLopera
+b WenqiZhou
+listar_usuarios
+i PauDuran 4
+problemas_enviables PauDuran
+e PauDuran A07 0
+e PauDuran A07 0
+e PauDuran A07 0
+e PauDuran A07 1
+e PauDuran E04 1
+e PauDuran A10 0
+e PauDuran A10 1
+e PauDuran B03 1
+pe PauDuran
+e PauDuran E06 1
+e PauDuran E05 1
+e PauDuran E01 1
+e PauDuran E03 1
+curso_usuario PauDuran
+e PauDuran E02 1
+e PauDuran A01 0
+e PauDuran A01 1
+e PauDuran A04 1
+cu PauDuran
+lp
+ec 4
+b PauDuran
+lp
+ec 4
+escribir_usuario MarcNavarro
+i MarcNavarro 4
+curso_usuario MarcNavarro
+pe MarcNavarro
+e MarcNavarro A07 0
+e MarcNavarro A07 1
+e MarcNavarro E01 1
+e MarcNavarro E04 1
+e MarcNavarro B03 1
+e MarcNavarro A10 1
+e MarcNavarro E05 1
+e MarcNavarro E06 1
+e MarcNavarro E02 1
+e MarcNavarro E03 0
+e MarcNavarro E03 1
+e MarcNavarro A01 0
+e MarcNavarro A01 0
+e MarcNavarro A01 1
+e MarcNavarro A04 1
+escribir_curso 4
+eu MarcNavarro
+ec 1
+i MarcNavarro 1
+pe MarcNavarro
+ec 1
+i MarcNavarro 2
+pe MarcNavarro
+e MarcNavarro A02 1
+e MarcNavarro A03 0
+e MarcNavarro A03 1
+pe MarcNavarro
+e MarcNavarro A05 1
+curso_usuario MarcNavarro
+listar_problemas
+nuevo_curso 2 sesion2 sesion6
+nuevo_curso 2 sesion6 sesion1
+lc
+ls
+lu
+b VictorMena
+b JoanVazquez
+eu JoanVazquez
+eu VictorMena
+b MarcAranda
+b RubenTorrente
+lu
+fin
+
+
+
+
+
+
+
+
+
+
+

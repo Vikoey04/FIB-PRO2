@@ -1,0 +1,179 @@
+\hypertarget{class_problema}{}\section{Referencia de la Clase Problema}
+\label{class_problema}\index{Problema@{Problema}}
+
+
+Representa un \mbox{\hyperlink{class_problema}{Problema}} de una \mbox{\hyperlink{class_sesion}{Sesion}} de la plataforma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_problema_a9d81af5f3f42a1b4354ad8f3c022fca3}{Problema}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problema_a7867d1ae1e09f424283feae8c5b636c8}{act\+\_\+envios}} (bool r)
+\begin{DoxyCompactList}\small\item\em Actualiza el número de envios totales y correctos de un problema dada una respuesta r. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}{ratio}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el ratio de un problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problema_a347d893324235e849a4e73b8d101beb3}{escribir\+\_\+problema}} () const
+\begin{DoxyCompactList}\small\item\em Imprime un problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_problema_a968bd889d6dc627efb59318ccc2eed7d}{t}}
+\item 
+int \mbox{\hyperlink{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}{e}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un \mbox{\hyperlink{class_problema}{Problema}} de una \mbox{\hyperlink{class_sesion}{Sesion}} de la plataforma. 
+
+Especifiación de clase \mbox{\hyperlink{class_problema}{Problema}}.
+
+Un problema forma parte de una sesion. Este está formado por el número de envios totales que se han realizado y el número de envios correctos. 
+
+Definición en la línea 25 del archivo Problema.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_problema_a9d81af5f3f42a1b4354ad8f3c022fca3}\label{class_problema_a9d81af5f3f42a1b4354ad8f3c022fca3}} 
+\index{Problema@{Problema}!Problema@{Problema}}
+\index{Problema@{Problema}!Problema@{Problema}}
+\subsubsection{\texorpdfstring{Problema()}{Problema()}}
+{\footnotesize\ttfamily Problema\+::\+Problema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un problema con el nº de envíos totales y el nº de envíos correctos que se han realizado igual a 0 
+\end{DoxyPostcond}
+
+
+Definición en la línea 18 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}
+18                          \{
+19         \mbox{\hyperlink{class_problema_a968bd889d6dc627efb59318ccc2eed7d}{t}} = 0;
+20         \mbox{\hyperlink{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}{e}} = 0;
+21       \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_problema_a7867d1ae1e09f424283feae8c5b636c8}\label{class_problema_a7867d1ae1e09f424283feae8c5b636c8}} 
+\index{Problema@{Problema}!act\+\_\+envios@{act\+\_\+envios}}
+\index{act\+\_\+envios@{act\+\_\+envios}!Problema@{Problema}}
+\subsubsection{\texorpdfstring{act\+\_\+envios()}{act\_envios()}}
+{\footnotesize\ttfamily void Problema\+::act\+\_\+envios (\begin{DoxyParamCaption}\item[{bool}]{r }\end{DoxyParamCaption})}
+
+
+
+Actualiza el número de envios totales y correctos de un problema dada una respuesta r. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El nº de envios totales del problema augmentan en una unidad. Si r es cierto, también augmenta en una unidad el nº de envíos correctos del problema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 31 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}
+31                                       \{
+32         ++\mbox{\hyperlink{class_problema_a968bd889d6dc627efb59318ccc2eed7d}{t}};
+33         \textcolor{keywordflow}{if} (r) ++\mbox{\hyperlink{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}{e}};
+34       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}\label{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}} 
+\index{Problema@{Problema}!ratio@{ratio}}
+\index{ratio@{ratio}!Problema@{Problema}}
+\subsubsection{\texorpdfstring{ratio()}{ratio()}}
+{\footnotesize\ttfamily double Problema\+::ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el ratio de un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el ratio (t+1)/(e+1) del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 42 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}
+42                                    \{
+43         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}{ratio}} = (\mbox{\hyperlink{class_problema_a968bd889d6dc627efb59318ccc2eed7d}{t}}+1);
+44         \mbox{\hyperlink{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}{ratio}} = \mbox{\hyperlink{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}{ratio}}/(\mbox{\hyperlink{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}{e}}+1);
+45         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_problema_a8b41092b4207375e9f1bb4e29b9d4535}{ratio}};
+46       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_problema_a347d893324235e849a4e73b8d101beb3}\label{class_problema_a347d893324235e849a4e73b8d101beb3}} 
+\index{Problema@{Problema}!escribir\+\_\+problema@{escribir\+\_\+problema}}
+\index{escribir\+\_\+problema@{escribir\+\_\+problema}!Problema@{Problema}}
+\subsubsection{\texorpdfstring{escribir\+\_\+problema()}{escribir\_problema()}}
+{\footnotesize\ttfamily void Problema\+::escribir\+\_\+problema (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime un problema. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+De un problema, imprime el nº de envíos totales y el nº de envíos con éxito, en ambos casos de usuarios presentes o pasados 
+\end{DoxyPostcond}
+
+
+Definición en la línea 55 del archivo Problema.\+cc.
+
+
+\begin{DoxyCode}
+55                                              \{
+56         cout << \textcolor{stringliteral}{"("} << \mbox{\hyperlink{class_problema_a968bd889d6dc627efb59318ccc2eed7d}{t}} << \textcolor{stringliteral}{","} << \mbox{\hyperlink{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}{e}} << \textcolor{stringliteral}{","};
+57       \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_problema_a968bd889d6dc627efb59318ccc2eed7d}\label{class_problema_a968bd889d6dc627efb59318ccc2eed7d}} 
+\index{Problema@{Problema}!t@{t}}
+\index{t@{t}!Problema@{Problema}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily int Problema\+::t\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 30 del archivo Problema.\+hh.
+
+\mbox{\Hypertarget{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}\label{class_problema_a725a4c8c4faf4d1a646ef7ce9db37211}} 
+\index{Problema@{Problema}!e@{e}}
+\index{e@{e}!Problema@{Problema}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily int Problema\+::e\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 31 del archivo Problema.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_problema_8hh}{Problema.\+hh}}\item 
+\mbox{\hyperlink{_problema_8cc}{Problema.\+cc}}\end{DoxyCompactItemize}

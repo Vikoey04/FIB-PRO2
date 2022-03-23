@@ -1,0 +1,125 @@
+77
+V01 V02 V03 V04 V05 V06 V07 V08 V09 V10 V11 V12 V13
+V14 V15 V16 V17 V18 V19 V20 V21 V22 V23 V24 V25
+T01 T02 T03 T04 T05
+P01 P02 P03 P04 P05 P06
+C01 C02 C03 C04 C05
+L01 L02 L03 L04 L05 L06 L07 L08
+S01 S02 S03
+M01 M02 M03 M04 M05 M06 M07
+CP01 CP02 CP03 CP04 CP05 CP06 CP07
+AB01 AB02 AB03 AB04 AB05 AB06 AB07 AB08 AB09 AB10 AB11
+17
+tuplas T01 T02 T04 0 0 T05 0 0 T03 0 0
+vectores_0 V01 V02 0 0 V03 0 0
+vectores_1 V01 V02 V04 0 0 0 V03 V05 0 0 V06 0 0
+vectores_2 V07 V08 V09 V10 0 0 0 V11 0 0 V12 V13 V14 0 0 0 0
+vectores_3 V15 V16 V17 0 0 V18 0 0 0
+matrices V19 V20 V21 0 0 0 V22 V23 0 0 0
+pilas P01 P02 P04 0 0 0 P03 0 0
+colas C01 C02 C03 0 0 0 0
+vectores_sel V06 V10 V16 0 0 V24 V22 0 0 0 V25 V14 0 0 V18 0 0
+pilas_y_colas_sel P03 P05 P06 0 0 0 C02 C04 0 0 C05 0 0
+listas_1 L01 L02 L04 0 0 0 L03 0 0
+listas_2 L05 L06 L07 0 0 L08 0 0 0
+arb_bin_1 AB01 AB02 AB03 AB04 0 0 AB05 0 0 0 AB06 0 0
+arb_bin_2 AB07 AB08 0 0 AB09 AB10 0 0 AB11 0 0
+sets S01 S02 0 0 S03 0 0
+maps M01 M02 M03 0 0 M05 0 0 M04 M06 0 0 M07 0 0
+colas_prior CP01 CP02 CP04 0 0 0 CP03 CP05 CP06 0 0 CP07 0 0 0
+3
+2 tuplas vectores_0
+7 tuplas vectores_1 vectores_2 vectores_3 matrices pilas colas
+9 vectores_sel pilas_y_colas_sel listas_1 listas_2 arb_bin_1 arb_bin_2 sets maps colas_prior
+16
+MarcTerStegen
+SerginhoDest
+GerardPique
+ClementLenglet
+JordiAlba
+SergioBusquets
+FrenkieDeJong
+Pedri
+LionelMessi
+AntoineGriezmann
+AnsuFati
+MartaTorrejon
+AlexiaPutellas
+AitanaBonmati
+JenniferHermoso
+LiekeMartens
+listar_problemas
+listar_sesiones
+listar_cursos
+listar_usuarios
+nuevo_problema S03
+np S04
+np M08
+np M09
+nueva_sesion maps
+M07 M08 0 0 M09 0 0
+ns maps_y_sets_sel 
+S02 M02 M04 0 0 M08 0 0 S04 M05 0 0 M07 M09 0 0 0
+nuevo_problema G01
+np G02
+np G03
+np G04
+np G05
+np G06
+np G07
+np G08
+np G09
+np G10
+np G11
+np G12
+nueva_sesion grafos_1
+G01 G02 G03 G05 0 0 G06 0 0 G04 0 0 0
+ns grafos_2
+G07 G08 0 0 G09 G10 G12 0 0 0 G11 0 0
+baja_usuario AnsuFati
+b AnsuFati
+alta_usuario OusmaneDembele
+a SergioBusquets
+inscribir_curso Pedri 1
+i AnsuFati 1
+i Pedri 2
+i LionelMessi 5
+i AitanaBonmati 2
+i MarcTerStegen 3
+i LiekeMartens 1
+lu
+lc
+curso_usuario Pedri
+cu LionelMessi
+cu AnsuFati
+sesion_problema 1 V01
+sp 0 V01
+sp 1 V20
+sp 1 V30
+sp 2 V06
+sp 3 V06
+sp 4 CP01
+problemas_enviables Pedri
+pe AnsuFati
+pe SerginhoDest
+pe AitanaBonmati
+pe MarcTerStegen
+pe LiekeMartens
+problemas_resueltos Pedri
+pr LuisSuarez
+escribir_sesion grafos_2
+es grafos_3
+es colas_prior
+escribir_curso 3
+ec 0
+ec 1
+escribir_problema G12
+ep G999
+ep T01
+escribir_usuario MarcTerStegen
+eu LionelMessi
+eu LuisSuarez
+ls
+lp
+fin
+

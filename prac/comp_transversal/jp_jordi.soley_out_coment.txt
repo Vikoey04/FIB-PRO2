@@ -1,0 +1,603 @@
+#listar_problemas
+A01(0,0,1)
+A02(0,0,1)
+A03(0,0,1)
+A04(0,0,1)
+A05(0,0,1)
+A06(0,0,1)
+A07(0,0,1)
+A08(0,0,1)
+A09(0,0,1)
+A10(0,0,1)
+B01(0,0,1)
+B02(0,0,1)
+B03(0,0,1)
+B04(0,0,1)
+B05(0,0,1)
+B06(0,0,1)
+B07(0,0,1)
+B08(0,0,1)
+C01(0,0,1)
+C02(0,0,1)
+C03(0,0,1)
+C04(0,0,1)
+C05(0,0,1)
+C06(0,0,1)
+C07(0,0,1)
+C08(0,0,1)
+C09(0,0,1)
+C10(0,0,1)
+D01(0,0,1)
+D02(0,0,1)
+D03(0,0,1)
+D04(0,0,1)
+D05(0,0,1)
+E01(0,0,1)
+E05(0,0,1)
+E06(0,0,1)
+E07(0,0,1)
+E08(0,0,1)
+E09(0,0,1)
+F01(0,0,1)
+F02(0,0,1)
+F03(0,0,1)
+F04(0,0,1)
+F05(0,0,1)
+F06(0,0,1)
+F07(0,0,1)
+F08(0,0,1)
+F09(0,0,1)
+F10(0,0,1)
+G01(0,0,1)
+G02(0,0,1)
+G03(0,0,1)
+G04(0,0,1)
+G05(0,0,1)
+G06(0,0,1)
+G07(0,0,1)
+G08(0,0,1)
+G09(0,0,1)
+G10(0,0,1)
+#listar_sesiones
+sesion1 1 (A01)
+sesion2 4 ((((A05)A04)A03)A02)
+sesion3 4 ((((A09)A08)A07)A06)
+sesion4 9 ((((B05)(B06)B03)B01)(((B07)(B08)B04)B02)A10)
+#listar_cursos
+1 0 0 1 (sesion1)
+2 0 0 2 (sesion1 sesion2)
+3 0 0 3 (sesion1 sesion2 sesion3)
+#listar_usuarios
+JaviLopez(0,0,0,0)
+JesusAndujar(0,0,0,0)
+JoanVazquez(0,0,0,0)
+LaiaLamana(0,0,0,0)
+MarcAranda(0,0,0,0)
+MarcNavarro(0,0,0,0)
+PauDuran(0,0,0,0)
+RubenTorrente(0,0,0,0)
+VictorMena(0,0,0,0)
+WenqiZhou(0,0,0,0)
+#nuevo_problema A02
+error: el problema ya existe
+#np E04
+60
+#nuevo_problema E02
+61
+#np E03
+62
+#lp
+A01(0,0,1)
+A02(0,0,1)
+A03(0,0,1)
+A04(0,0,1)
+A05(0,0,1)
+A06(0,0,1)
+A07(0,0,1)
+A08(0,0,1)
+A09(0,0,1)
+A10(0,0,1)
+B01(0,0,1)
+B02(0,0,1)
+B03(0,0,1)
+B04(0,0,1)
+B05(0,0,1)
+B06(0,0,1)
+B07(0,0,1)
+B08(0,0,1)
+C01(0,0,1)
+C02(0,0,1)
+C03(0,0,1)
+C04(0,0,1)
+C05(0,0,1)
+C06(0,0,1)
+C07(0,0,1)
+C08(0,0,1)
+C09(0,0,1)
+C10(0,0,1)
+D01(0,0,1)
+D02(0,0,1)
+D03(0,0,1)
+D04(0,0,1)
+D05(0,0,1)
+E01(0,0,1)
+E02(0,0,1)
+E03(0,0,1)
+E04(0,0,1)
+E05(0,0,1)
+E06(0,0,1)
+E07(0,0,1)
+E08(0,0,1)
+E09(0,0,1)
+F01(0,0,1)
+F02(0,0,1)
+F03(0,0,1)
+F04(0,0,1)
+F05(0,0,1)
+F06(0,0,1)
+F07(0,0,1)
+F08(0,0,1)
+F09(0,0,1)
+F10(0,0,1)
+G01(0,0,1)
+G02(0,0,1)
+G03(0,0,1)
+G04(0,0,1)
+G05(0,0,1)
+G06(0,0,1)
+G07(0,0,1)
+G08(0,0,1)
+G09(0,0,1)
+G10(0,0,1)
+#ns sesion6
+5
+#nueva_sesion sesion7
+6
+#ns sesion1
+error: la sesion ya existe
+#ls
+sesion1 1 (A01)
+sesion2 4 ((((A05)A04)A03)A02)
+sesion3 4 ((((A09)A08)A07)A06)
+sesion4 9 ((((B05)(B06)B03)B01)(((B07)(B08)B04)B02)A10)
+sesion6 5 ((E02)(((A04)A01)E03)E01)
+sesion7 6 ((((E05)B03)((E06)A10)E04)A07)
+#nuevo_curso
+4
+#nc
+error: curso mal formado
+#lc
+1 0 0 1 (sesion1)
+2 0 0 2 (sesion1 sesion2)
+3 0 0 3 (sesion1 sesion2 sesion3)
+4 0 0 2 (sesion6 sesion7)
+#a MartaCampana
+11
+#alta_usuario UnaiFernandez
+12
+#a IkerPuig
+13
+#a VictorMena
+error: el usuario ya existe
+#a AlvaroLopera
+14
+#lu
+AlvaroLopera(0,0,0,0)
+IkerPuig(0,0,0,0)
+JaviLopez(0,0,0,0)
+JesusAndujar(0,0,0,0)
+JoanVazquez(0,0,0,0)
+LaiaLamana(0,0,0,0)
+MarcAranda(0,0,0,0)
+MarcNavarro(0,0,0,0)
+MartaCampana(0,0,0,0)
+PauDuran(0,0,0,0)
+RubenTorrente(0,0,0,0)
+UnaiFernandez(0,0,0,0)
+VictorMena(0,0,0,0)
+WenqiZhou(0,0,0,0)
+#i AlexGuirao 3
+error: el usuario no existe
+#i MiguelAngel 27
+error: el usuario no existe
+#i IkerPuig 1
+1
+#e IkerPuig A01 0
+#e IkerPuig A01 0
+#e IkerPuig A01 0
+#e IkerPuig A01 1
+#ep A01
+A01(4,1,2.5)
+#problemas_enviables IkerPuig
+error: usuario no inscrito en ningun curso
+#pr IkerPuig
+A01(4)
+#i UnaiFernandez 3
+1
+#pe UnaiFernandez
+A01(0)
+A02(0)
+A06(0)
+#e UnaiFernandez A01 1
+#e UnaiFernandez A02 1
+#e UnaiFernandez A06 0
+#e UnaiFernandez A06 1
+#e UnaiFernandez A03 1
+#e UnaiFernandez A04 0
+#i UnaiFernandez 1 //Se intenta inscribir a un curso mientras ya está inscrito en otro
+error: usuario inscrito en otro curso
+#e UnaiFernandez A07 1
+#e UnaiFernandez A04 1
+#e UnaiFernandez A05 1
+#e UnaiFernandez A08 0
+#e UnaiFernandez A08 1
+#e UnaiFernandez A09 1
+#pr UnaiFernandez //Podemos ver todos los intentos de cada problema del curso que ha resuelto
+A01(1)
+A02(1)
+A03(1)
+A04(2)
+A05(1)
+A06(2)
+A07(1)
+A08(2)
+A09(1)
+#i UnaiFernandez 1 //Se incribe a un curso el cual ya ha hecho todos los problemas, en la siguiente operación podremos ver como autocompleta el curso
+1
+#curso_usuario UnaiFernandez //El curso lo ha autocompletado al haber realizado ya todos los problemas
+0
+#pe UnaiFernandez //Al haberlo autocompletado deja de estar inscrito
+error: usuario no inscrito en ningun curso
+#ec 3 //Podemos ver que hay 1 usuario que ha completado el curso (UnaiFernandez en este caso)
+3 1 0 3 (sesion1 sesion2 sesion3)
+#sp 1 A01 //El problema pertenece al curso
+sesion1
+#sp 1 A02 //El curso y el problema existen pero el problema no pertenece al curso
+error: el problema no pertenece al curso
+#sp 2 A03 //El problema pertenece al curso
+sesion2
+#sp 2 A05 //El problema pertenece al curso
+sesion2
+#sp 10 Z03 //Ni el curso ni el problema existe, antes se imprime el error de que no existe el curso
+error: el problema no existe
+#sp 10 A01 //El problema existe pero el curso no
+error: el curso no existe
+#b AdrianCaballero //El usuario que intenta dar de baja no existe
+error: el usuario no existe
+#b AlvaroLopera
+13
+#b WenqiZhou
+12
+#listar_usuarios //Podemos observar los cambios
+IkerPuig(4,1,1,0)
+JaviLopez(0,0,0,0)
+JesusAndujar(0,0,0,0)
+JoanVazquez(0,0,0,0)
+LaiaLamana(0,0,0,0)
+MarcAranda(0,0,0,0)
+MarcNavarro(0,0,0,0)
+MartaCampana(0,0,0,0)
+PauDuran(0,0,0,0)
+RubenTorrente(0,0,0,0)
+UnaiFernandez(12,9,9,0)
+VictorMena(0,0,0,0)
+#i PauDuran 4
+1
+#problemas_enviables PauDuran
+A07(0)
+E01(0)
+#e PauDuran A07 0
+#e PauDuran A07 0
+#e PauDuran A07 0
+#e PauDuran A07 1
+#e PauDuran E04 1
+#e PauDuran A10 0
+#e PauDuran A10 1
+#e PauDuran B03 1
+#pe PauDuran
+E01(0)
+E05(0)
+E06(0)
+#e PauDuran E06 1
+#e PauDuran E05 1
+#e PauDuran E01 1
+#e PauDuran E03 1
+#curso_usuario PauDuran
+4
+#e PauDuran E02 1
+#e PauDuran A01 0
+#e PauDuran A01 1
+#e PauDuran A04 1 //Este es el ultimo problema que le queda para completar el curso
+#cu PauDuran //Vemos que ha terminado el curso
+0
+#lp //Vemos los cambios en las estadisticas de los problemas que han provocado los envios de PauDuran
+A02(1,1,1)
+A03(1,1,1)
+A05(1,1,1)
+A09(1,1,1)
+B01(0,0,1)
+B02(0,0,1)
+B03(1,1,1)
+B04(0,0,1)
+B05(0,0,1)
+B06(0,0,1)
+B07(0,0,1)
+B08(0,0,1)
+C01(0,0,1)
+C02(0,0,1)
+C03(0,0,1)
+C04(0,0,1)
+C05(0,0,1)
+C06(0,0,1)
+C07(0,0,1)
+C08(0,0,1)
+C09(0,0,1)
+C10(0,0,1)
+D01(0,0,1)
+D02(0,0,1)
+D03(0,0,1)
+D04(0,0,1)
+D05(0,0,1)
+E01(1,1,1)
+E02(1,1,1)
+E03(1,1,1)
+E04(1,1,1)
+E05(1,1,1)
+E06(1,1,1)
+E07(0,0,1)
+E08(0,0,1)
+E09(0,0,1)
+F01(0,0,1)
+F02(0,0,1)
+F03(0,0,1)
+F04(0,0,1)
+F05(0,0,1)
+F06(0,0,1)
+F07(0,0,1)
+F08(0,0,1)
+F09(0,0,1)
+F10(0,0,1)
+G01(0,0,1)
+G02(0,0,1)
+G03(0,0,1)
+G04(0,0,1)
+G05(0,0,1)
+G06(0,0,1)
+G07(0,0,1)
+G08(0,0,1)
+G09(0,0,1)
+G10(0,0,1)
+A04(3,2,1.33333)
+A06(2,1,1.5)
+A08(2,1,1.5)
+A10(2,1,1.5)
+A01(7,3,2)
+A07(5,2,2)
+#ec 4 //Vemos que hay una persona que ha completado el curso (en este caso PauDuran)
+4 1 0 2 (sesion6 sesion7)
+#b PauDuran //Al darlo de baja veremos que no implica que se modifiquen las estadisticas de los cursos y los problemas que ha completado/ha realizado intentos
+11
+#lp
+A02(1,1,1)
+A03(1,1,1)
+A05(1,1,1)
+A09(1,1,1)
+B01(0,0,1)
+B02(0,0,1)
+B03(1,1,1)
+B04(0,0,1)
+B05(0,0,1)
+B06(0,0,1)
+B07(0,0,1)
+B08(0,0,1)
+C01(0,0,1)
+C02(0,0,1)
+C03(0,0,1)
+C04(0,0,1)
+C05(0,0,1)
+C06(0,0,1)
+C07(0,0,1)
+C08(0,0,1)
+C09(0,0,1)
+C10(0,0,1)
+D01(0,0,1)
+D02(0,0,1)
+D03(0,0,1)
+D04(0,0,1)
+D05(0,0,1)
+E01(1,1,1)
+E02(1,1,1)
+E03(1,1,1)
+E04(1,1,1)
+E05(1,1,1)
+E06(1,1,1)
+E07(0,0,1)
+E08(0,0,1)
+E09(0,0,1)
+F01(0,0,1)
+F02(0,0,1)
+F03(0,0,1)
+F04(0,0,1)
+F05(0,0,1)
+F06(0,0,1)
+F07(0,0,1)
+F08(0,0,1)
+F09(0,0,1)
+F10(0,0,1)
+G01(0,0,1)
+G02(0,0,1)
+G03(0,0,1)
+G04(0,0,1)
+G05(0,0,1)
+G06(0,0,1)
+G07(0,0,1)
+G08(0,0,1)
+G09(0,0,1)
+G10(0,0,1)
+A04(3,2,1.33333)
+A06(2,1,1.5)
+A08(2,1,1.5)
+A10(2,1,1.5)
+A01(7,3,2)
+A07(5,2,2)
+#ec 4
+4 1 0 2 (sesion6 sesion7)
+#escribir_usuario MarcNavarro //El usuario aun no se ha inscrito en ningun curso y por lo tanto no ha realizado aun ningun envío
+MarcNavarro(0,0,0,0)
+#i MarcNavarro 4
+1
+#curso_usuario MarcNavarro
+4
+#pe MarcNavarro
+A07(0)
+E01(0)
+#e MarcNavarro A07 0
+#e MarcNavarro A07 1
+#e MarcNavarro E01 1
+#e MarcNavarro E04 1
+#e MarcNavarro B03 1
+#e MarcNavarro A10 1
+#e MarcNavarro E05 1
+#e MarcNavarro E06 1
+#e MarcNavarro E02 1
+#e MarcNavarro E03 0
+#e MarcNavarro E03 1
+#e MarcNavarro A01 0
+#e MarcNavarro A01 0
+#e MarcNavarro A01 1
+#e MarcNavarro A04 1
+#escribir_curso 4
+4 2 0 2 (sesion6 sesion7)
+#eu MarcNavarro
+MarcNavarro(15,11,11,0)
+#ec 1
+1 2 0 1 (sesion1)
+#i MarcNavarro 1 //El usuario ya ha resuelto todos los problemas del curso
+1
+#pe MarcNavarro //No esta inscrito ya que lo autocompleta
+error: usuario no inscrito en ningun curso
+#ec 1
+1 3 0 1 (sesion1) //Vemos que ha augmentado en 1 el nº de usuarios que han completado el curso
+#i MarcNavarro 2
+1
+#pe MarcNavarro //El curso al que se ha incrito tiene dos sesiones pero hay una sesion de un solo problema del que ya ha resuelto el problema en otro curso
+A02(0)
+#e MarcNavarro A02 1
+#e MarcNavarro A03 0
+#e MarcNavarro A03 1 //El siguiente problema por prerequisitos seria A04 pero veremos que no aparecerá en enviables en la siguiente operación
+#pe MarcNavarro
+A05(0)
+#e MarcNavarro A05 1
+#curso_usuario MarcNavarro
+0
+#listar_problemas //Vemos como se imprimen segun el ratio y si hay empate por identificador creciente
+A02(2,2,1)
+A05(2,2,1)
+A09(1,1,1)
+B01(0,0,1)
+B02(0,0,1)
+B03(2,2,1)
+B04(0,0,1)
+B05(0,0,1)
+B06(0,0,1)
+B07(0,0,1)
+B08(0,0,1)
+C01(0,0,1)
+C02(0,0,1)
+C03(0,0,1)
+C04(0,0,1)
+C05(0,0,1)
+C06(0,0,1)
+C07(0,0,1)
+C08(0,0,1)
+C09(0,0,1)
+C10(0,0,1)
+D01(0,0,1)
+D02(0,0,1)
+D03(0,0,1)
+D04(0,0,1)
+D05(0,0,1)
+E01(2,2,1)
+E02(2,2,1)
+E04(2,2,1)
+E05(2,2,1)
+E06(2,2,1)
+E07(0,0,1)
+E08(0,0,1)
+E09(0,0,1)
+F01(0,0,1)
+F02(0,0,1)
+F03(0,0,1)
+F04(0,0,1)
+F05(0,0,1)
+F06(0,0,1)
+F07(0,0,1)
+F08(0,0,1)
+F09(0,0,1)
+F10(0,0,1)
+G01(0,0,1)
+G02(0,0,1)
+G03(0,0,1)
+G04(0,0,1)
+G05(0,0,1)
+G06(0,0,1)
+G07(0,0,1)
+G08(0,0,1)
+G09(0,0,1)
+G10(0,0,1)
+A04(4,3,1.25)
+A03(3,2,1.33333)
+A10(3,2,1.33333)
+E03(3,2,1.33333)
+A06(2,1,1.5)
+A08(2,1,1.5)
+A07(7,3,2)
+A01(10,4,2.2)
+#nuevo_curso //No tiene interseccion de problemas entre sesiones vacia
+error: curso mal formado
+#nuevo_curso //No tiene interseccion de problemas entre sesiones vacia
+error: curso mal formado
+#lc
+1 3 0 1 (sesion1)
+2 1 0 2 (sesion1 sesion2)
+3 1 0 3 (sesion1 sesion2 sesion3)
+4 2 0 2 (sesion6 sesion7)
+#ls
+sesion1 1 (A01)
+sesion2 4 ((((A05)A04)A03)A02)
+sesion3 4 ((((A09)A08)A07)A06)
+sesion4 9 ((((B05)(B06)B03)B01)(((B07)(B08)B04)B02)A10)
+sesion6 5 ((E02)(((A04)A01)E03)E01)
+sesion7 6 ((((E05)B03)((E06)A10)E04)A07)
+#lu
+IkerPuig(4,1,1,0)
+JaviLopez(0,0,0,0)
+JesusAndujar(0,0,0,0)
+JoanVazquez(0,0,0,0)
+LaiaLamana(0,0,0,0)
+MarcAranda(0,0,0,0)
+MarcNavarro(19,14,14,0)
+MartaCampana(0,0,0,0)
+RubenTorrente(0,0,0,0)
+UnaiFernandez(12,9,9,0)
+VictorMena(0,0,0,0)
+#b VictorMena
+10
+#b JoanVazquez
+9
+#eu JoanVazquez
+error: el usuario no existe
+#eu VictorMena
+error: el usuario no existe
+#b MarcAranda
+8
+#b RubenTorrente
+7
+#lu
+IkerPuig(4,1,1,0)
+JaviLopez(0,0,0,0)
+JesusAndujar(0,0,0,0)
+LaiaLamana(0,0,0,0)
+MarcNavarro(19,14,14,0)
+MartaCampana(0,0,0,0)
+UnaiFernandez(12,9,9,0)

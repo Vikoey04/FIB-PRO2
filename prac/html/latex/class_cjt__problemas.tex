@@ -1,0 +1,345 @@
+\hypertarget{class_cjt__problemas}{}\section{Referencia de la Clase Cjt\+\_\+problemas}
+\label{class_cjt__problemas}\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+
+
+Representa un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}} (conjunto de problemas)  
+
+
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_cjt__problemas_1_1prat}{prat}}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cjt__problemas_abc8bb814818ed290a0a99636cdca8519}{Cjt\+\_\+problemas}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt__problemas_a6c84adcab542d776e02f851eb9d3da82}{nuevo\+\_\+problema}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo problema con identificador p a un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt__problemas_abb0defe688a1012b27eddc463b53bf18}{act\+\_\+envios}} (const string \&p, bool r)
+\begin{DoxyCompactList}\small\item\em Actualiza el número de envíos totales y correctos de un problema de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cjt__problemas_aa713f6541f4d9b67497f047806a8374e}{num\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el nº de problemas de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cjt__problemas_a90b230192705dd6f2e15fb10514a5814}{existe\+\_\+problema}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Consulta si existe un problema con identificador p en un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt__problemas_a38d418d08be011f8cfbdfdac1ad2451a}{leer\+\_\+problemas}} ()
+\begin{DoxyCompactList}\small\item\em Lee los problemas para un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}} dado un nº de problemas a leer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt__problemas_a4fbbf5935069783a5ced92c5b169c330}{escribir\+\_\+problema}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Escribe un problema con identificador p de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt__problemas_a4cc09ed948f0315d5257d0d3a11e4dd5}{listar\+\_\+problemas}} () const
+\begin{DoxyCompactList}\small\item\em Lista los problemas de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos privados estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_cjt__problemas_ae5b468db02077990aedcd73835aaa9e1}{comp}} (\mbox{\hyperlink{struct_cjt__problemas_1_1prat}{prat}} p1, \mbox{\hyperlink{struct_cjt__problemas_1_1prat}{prat}} p2)
+\begin{DoxyCompactList}\small\item\em Funcion de comparación de dos elementos segun el ratio y si hay empate segun identificador creciente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_problema}{Problema}} $>$ \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}} (conjunto de problemas) 
+
+Representa un conjunto de problemas. 
+
+Definición en la línea 24 del archivo Cjt\+\_\+problemas.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cjt__problemas_abc8bb814818ed290a0a99636cdca8519}\label{class_cjt__problemas_abc8bb814818ed290a0a99636cdca8519}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{Cjt\+\_\+problemas()}{Cjt\_problemas()}}
+{\footnotesize\ttfamily Cjt\+\_\+problemas\+::\+Cjt\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}} vacío 
+\end{DoxyPostcond}
+
+
+Definición en la línea 24 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+24 \{\}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cjt__problemas_ae5b468db02077990aedcd73835aaa9e1}\label{class_cjt__problemas_ae5b468db02077990aedcd73835aaa9e1}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!comp@{comp}}
+\index{comp@{comp}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{comp()}{comp()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+problemas\+::comp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cjt__problemas_1_1prat}{prat}}}]{p1,  }\item[{\mbox{\hyperlink{struct_cjt__problemas_1_1prat}{prat}}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Funcion de comparación de dos elementos segun el ratio y si hay empate segun identificador creciente. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Funcion de comparación de dos elementos segun el ratio y si hay empate segun identificador creciente 
+\end{DoxyPostcond}
+
+
+Definición en la línea 16 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+16                                              \{
+17       \textcolor{keywordflow}{if} (p1.ratio == p2.ratio) \textcolor{keywordflow}{return} p1.id < p2.id;
+18       \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} p1.ratio < p2.ratio;
+19     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_a6c84adcab542d776e02f851eb9d3da82}\label{class_cjt__problemas_a6c84adcab542d776e02f851eb9d3da82}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!nuevo\+\_\+problema@{nuevo\+\_\+problema}}
+\index{nuevo\+\_\+problema@{nuevo\+\_\+problema}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{nuevo\+\_\+problema()}{nuevo\_problema()}}
+{\footnotesize\ttfamily void Cjt\+\_\+problemas\+::nuevo\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo problema con identificador p a un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se añade un nuevo problema con identificador p en el parámetro implícito; si ya existe un problema con el mismo identificador se imprime un error. En caso contrario imprime el nº de problemas del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 34 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+34                                                       \{
+35       map<string, Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.find(p);
+36       \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.end()) \{
+37         \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}[p] = \mbox{\hyperlink{class_problema}{Problema}}();
+38         cout << \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.size() << endl;
+39       \}
+40       \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: el problema ya existe"} << endl;
+41     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_abb0defe688a1012b27eddc463b53bf18}\label{class_cjt__problemas_abb0defe688a1012b27eddc463b53bf18}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!act\+\_\+envios@{act\+\_\+envios}}
+\index{act\+\_\+envios@{act\+\_\+envios}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{act\+\_\+envios()}{act\_envios()}}
+{\footnotesize\ttfamily void Cjt\+\_\+problemas\+::act\+\_\+envios (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{bool}]{r }\end{DoxyParamCaption})}
+
+
+
+Actualiza el número de envíos totales y correctos de un problema de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+Existe un problema con identificador p. r vale 1 o 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El nº de envios totales del problema augmentan en una unidad. Si r = 1, también augmenta en una unidad el nº de envíos correctos del problema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 48 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+48                                                           \{
+49       map<string, Problema>::iterator it = \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.find(p);
+50       \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.end()) it->second.act\_envios(r);
+51     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_aa713f6541f4d9b67497f047806a8374e}\label{class_cjt__problemas_aa713f6541f4d9b67497f047806a8374e}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!num\+\_\+problemas@{num\+\_\+problemas}}
+\index{num\+\_\+problemas@{num\+\_\+problemas}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{num\+\_\+problemas()}{num\_problemas()}}
+{\footnotesize\ttfamily int Cjt\+\_\+problemas\+::num\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el nº de problemas de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el nº de problemas del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 59 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+59                                            \{
+60       \textcolor{keywordflow}{return} \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.size();
+61     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_a90b230192705dd6f2e15fb10514a5814}\label{class_cjt__problemas_a90b230192705dd6f2e15fb10514a5814}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!existe\+\_\+problema@{existe\+\_\+problema}}
+\index{existe\+\_\+problema@{existe\+\_\+problema}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{existe\+\_\+problema()}{existe\_problema()}}
+{\footnotesize\ttfamily bool Cjt\+\_\+problemas\+::existe\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Consulta si existe un problema con identificador p en un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve cierto si existe un problema con identificador p en el parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 68 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+68                                                              \{
+69       map<string, Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.find(p);
+70       \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+71       \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+72     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_a38d418d08be011f8cfbdfdac1ad2451a}\label{class_cjt__problemas_a38d418d08be011f8cfbdfdac1ad2451a}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!leer\+\_\+problemas@{leer\+\_\+problemas}}
+\index{leer\+\_\+problemas@{leer\+\_\+problemas}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{leer\+\_\+problemas()}{leer\_problemas()}}
+{\footnotesize\ttfamily void Cjt\+\_\+problemas\+::leer\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee los problemas para un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}} dado un nº de problemas a leer. 
+
+\begin{DoxyPrecond}{Precondición}
+Hay en la entrada un entero P $>$ 0 y P strings identificadores de los problemas 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}} con P problemas cuyos strings son los leidos por la entrada 
+\end{DoxyPostcond}
+
+
+Definición en la línea 81 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+81                                        \{
+82       \textcolor{keywordtype}{int} nump;
+83       \textcolor{keywordtype}{string} p;
+84       cin >> nump;
+85       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i <nump; ++i) \{
+86         cin >> p;
+87         \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.insert(make\_pair(p, \mbox{\hyperlink{class_problema}{Problema}}()));
+88       \}
+89     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_a4fbbf5935069783a5ced92c5b169c330}\label{class_cjt__problemas_a4fbbf5935069783a5ced92c5b169c330}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!escribir\+\_\+problema@{escribir\+\_\+problema}}
+\index{escribir\+\_\+problema@{escribir\+\_\+problema}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{escribir\+\_\+problema()}{escribir\_problema()}}
+{\footnotesize\ttfamily void Cjt\+\_\+problemas\+::escribir\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Escribe un problema con identificador p de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Del problema imprime el nº t de envíos totales y el nº e de envíos con éxito a dicho problema, en ambos casos de usuarios presentes o pasados. También imprime el ratio (t+1)/(e+1). Si el problema no existe se imprime un error 
+\end{DoxyPostcond}
+
+
+Definición en la línea 98 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+98                                                                \{
+99       map<string, Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.find(p);
+100       \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.end()) \{
+101         cout << it->first;
+102         it->second.escribir\_problema();
+103         cout << it->second.ratio() << \textcolor{stringliteral}{")"} << endl;
+104       \}
+105       \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: el problema no existe"} << endl;
+106     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cjt__problemas_a4cc09ed948f0315d5257d0d3a11e4dd5}\label{class_cjt__problemas_a4cc09ed948f0315d5257d0d3a11e4dd5}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!listar\+\_\+problemas@{listar\+\_\+problemas}}
+\index{listar\+\_\+problemas@{listar\+\_\+problemas}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{listar\+\_\+problemas()}{listar\_problemas()}}
+{\footnotesize\ttfamily void Cjt\+\_\+problemas\+::listar\+\_\+problemas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Lista los problemas de un \mbox{\hyperlink{class_cjt__problemas}{Cjt\+\_\+problemas}}. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Lista los problemas de la colección; para cada problema imprime el nº t de envíos totales y el nº e de envíos con éxito a dicho problema, en ambos casos de usuarios presentes o pasados. También imprime el ratio (t+1)/(e+1) con el cúal se listan los problemas de forma creciente. En caso de empate, se listarán de forma creciente según el identificador 
+\end{DoxyPostcond}
+
+
+Definición en la línea 116 del archivo Cjt\+\_\+problemas.\+cc.
+
+
+\begin{DoxyCode}
+116                                                \{
+117       vector<prat> v;
+118       prat prat;
+119       \textcolor{keywordflow}{for} (map<string,Problema>::const\_iterator it = \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.begin(); it != 
+      \mbox{\hyperlink{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}{problemas}}.end(); ++it) \{
+120         prat.id = it->first;
+121         prat.ratio = it->second.ratio();
+122         prat.problema = it->second;
+123         v.push\_back(prat);
+124       \}
+125       sort(v.begin(), v.end(), \mbox{\hyperlink{class_cjt__problemas_ae5b468db02077990aedcd73835aaa9e1}{comp}});
+126       \textcolor{keywordtype}{int} n = v.size();
+127 
+128       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; ++i) \{
+129         prat = v[i];
+130         cout << prat.id;
+131         prat.problema.escribir\_problema();
+132         cout << prat.ratio << \textcolor{stringliteral}{")"} << endl;
+133       \}
+134     \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}\label{class_cjt__problemas_aad49222fb63517d7d7fc3d691f045cc5}} 
+\index{Cjt\+\_\+problemas@{Cjt\+\_\+problemas}!problemas@{problemas}}
+\index{problemas@{problemas}!Cjt\+\_\+problemas@{Cjt\+\_\+problemas}}
+\subsubsection{\texorpdfstring{problemas}{problemas}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{class_problema}{Problema}}$>$ Cjt\+\_\+problemas\+::problemas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 28 del archivo Cjt\+\_\+problemas.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt__problemas_8hh}{Cjt\+\_\+problemas.\+hh}}\item 
+\mbox{\hyperlink{_cjt__problemas_8cc}{Cjt\+\_\+problemas.\+cc}}\end{DoxyCompactItemize}

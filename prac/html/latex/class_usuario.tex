@@ -1,0 +1,471 @@
+\hypertarget{class_usuario}{}\section{Referencia de la Clase Usuario}
+\label{class_usuario}\index{Usuario@{Usuario}}
+
+
+Representa un \mbox{\hyperlink{class_usuario}{Usuario}} registrado en la plataforma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_usuario_aa85a5371a098dfba5449140d9b8a472f}{Usuario}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a1410eee3a91f3affc43eb562512bcfb0}{inscribir\+\_\+curso}} (int c)
+\begin{DoxyCompactList}\small\item\em Inscribe un usuario a un curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a6c6272b10e0f3795062d39cd9689a9db}{envio}} (const string \&p, bool r)
+\begin{DoxyCompactList}\small\item\em Se toma nota del resultado r de un nuevo envío de un usuario al problema p. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a4dedcdcfe3d1769d6d2106d9fb2f7e51}{agregar\+\_\+problema\+\_\+disp}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Agrega un problema con identificador p como enviable a un usuario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a2db0039da08a135391248e34343d1ebd}{fin\+\_\+curso}} ()
+\begin{DoxyCompactList}\small\item\em Desinscribe un usuario del curso al que está inscrito. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_usuario_a35628c962b0db48ebcb85cd2eb186894}{esta\+\_\+inscrito}} () const
+\begin{DoxyCompactList}\small\item\em Consulta si un usuario está inscrito en algun curso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_usuario_aa8b3fb5f9ab3b36a2173b32b265f19c5}{curso\+\_\+usuario}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el identificador del curso al que está inscrito un usuario. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_usuario_a6f9608eac6a6a05d850dcad07bdf37f3}{ha\+\_\+resuelto\+\_\+problema}} (const string \&p) const
+\begin{DoxyCompactList}\small\item\em Comprueba si un usuario ha resuelto un problema con identificador p. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_usuario_aae8ff05308f5cc1e5f4267c577da386e}{ha\+\_\+terminado}} () const
+\begin{DoxyCompactList}\small\item\em Comprueba si un usuario ha terminado el curso al que está inscrito. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}{problemas\+\_\+resueltos}} () const
+\begin{DoxyCompactList}\small\item\em Imprime los identificadores de los problemas solucionados correctamente por el usuario y el nº de envios realizado por cada problema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}{problemas\+\_\+enviables}} () const
+\begin{DoxyCompactList}\small\item\em Imprime los identificadores de los problemas enviables por el usuario y el nº de envios que ha hecho de cada uno. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}{escribir\+\_\+usuario}} () const
+\begin{DoxyCompactList}\small\item\em Imprime un usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_usuario_adff16a149798e94b0747e7dc1bd85107}{pint}}
+\item 
+int \mbox{\hyperlink{class_usuario_a6d7fd52e0625b61d324922bf4783435e}{correctos}}
+\item 
+int \mbox{\hyperlink{class_usuario_a485a741c0646e6414bd6cf669a77fc9c}{envios}}
+\item 
+int \mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}}
+\item 
+map$<$ string, int $>$ \mbox{\hyperlink{class_usuario_ae614e565ce48a314a1e2b05beee8567b}{presueltos}}
+\item 
+map$<$ string, int $>$ \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un \mbox{\hyperlink{class_usuario}{Usuario}} registrado en la plataforma. 
+
+Especificación de la clase \mbox{\hyperlink{class_usuario}{Usuario}}.
+
+Está formado por diferentes estadísticas como el número de problemas intentados, el número de problemas correcots, el número de envíos totales, el curso al que está inscrito (si vale 0, no está inscrito en ninguno), los problemas resueltos y los intentos que ha realizado y los problemas que tiene disponibles para intentar y los intentos de cada uno. 
+
+Definición en la línea 28 del archivo Usuario.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_usuario_aa85a5371a098dfba5449140d9b8a472f}\label{class_usuario_aa85a5371a098dfba5449140d9b8a472f}} 
+\index{Usuario@{Usuario}!Usuario@{Usuario}}
+\index{Usuario@{Usuario}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{Usuario()}{Usuario()}}
+{\footnotesize\ttfamily Usuario\+::\+Usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un \mbox{\hyperlink{class_usuario}{Usuario}} sin estadísticas o iguales a 0 
+\end{DoxyPostcond}
+
+
+Definición en la línea 21 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+21                        \{
+22         \mbox{\hyperlink{class_usuario_adff16a149798e94b0747e7dc1bd85107}{pint}} = 0;
+23         \mbox{\hyperlink{class_usuario_a6d7fd52e0625b61d324922bf4783435e}{correctos}} = 0;
+24         \mbox{\hyperlink{class_usuario_a485a741c0646e6414bd6cf669a77fc9c}{envios}} = 0;
+25         \mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}} = 0;
+26       \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_usuario_a1410eee3a91f3affc43eb562512bcfb0}\label{class_usuario_a1410eee3a91f3affc43eb562512bcfb0}} 
+\index{Usuario@{Usuario}!inscribir\+\_\+curso@{inscribir\+\_\+curso}}
+\index{inscribir\+\_\+curso@{inscribir\+\_\+curso}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{inscribir\+\_\+curso()}{inscribir\_curso()}}
+{\footnotesize\ttfamily void Usuario\+::inscribir\+\_\+curso (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Inscribe un usuario a un curso. 
+
+\begin{DoxyPrecond}{Precondición}
+c no vacío, el parámetro implícito no está inscrito en ningún curso 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a estar inscrito a un curso c y se guarda su identificador 
+\end{DoxyPostcond}
+
+
+Definición en la línea 35 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+35                                          \{
+36         \mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}} = c;
+37       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a6c6272b10e0f3795062d39cd9689a9db}\label{class_usuario_a6c6272b10e0f3795062d39cd9689a9db}} 
+\index{Usuario@{Usuario}!envio@{envio}}
+\index{envio@{envio}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{envio()}{envio()}}
+{\footnotesize\ttfamily void Usuario\+::envio (\begin{DoxyParamCaption}\item[{const string \&}]{p,  }\item[{bool}]{r }\end{DoxyParamCaption})}
+
+
+
+Se toma nota del resultado r de un nuevo envío de un usuario al problema p. 
+
+\begin{DoxyPrecond}{Precondición}
+Existe un problema con identificador p que pertenece al curso al que el parámetro implícito está inscrito, el cual puede enviar una solución por cumplir los prerequisitos. r puede ser falso o cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El nº de envios totales, el nº de problemas intentados y el nº de intentos del problema por parte del parámetro implícito se actualizan. Si r es cierto, se añade el problema p a los problemas resueltos, se suprime de los problemas disponibles/enviables y se actualiza el nº de envios correctos del parámetro implícito 
+\end{DoxyPostcond}
+
+
+Definición en la línea 49 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+49                                                  \{
+50         map<string,int>::iterator i1 = \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}.find(p);
+51         \textcolor{keywordflow}{if} (i1->second == 0) ++\mbox{\hyperlink{class_usuario_adff16a149798e94b0747e7dc1bd85107}{pint}}; \textcolor{comment}{//act nº prob. intentados}
+52         ++\mbox{\hyperlink{class_usuario_a485a741c0646e6414bd6cf669a77fc9c}{envios}}; \textcolor{comment}{//act envios totales}
+53         ++i1->second; \textcolor{comment}{//act envios del problema disp}
+54 
+55         \textcolor{keywordflow}{if} (r) \{
+56           ++\mbox{\hyperlink{class_usuario_a6d7fd52e0625b61d324922bf4783435e}{correctos}}; \textcolor{comment}{//act envios correctos}
+57           \mbox{\hyperlink{class_usuario_ae614e565ce48a314a1e2b05beee8567b}{presueltos}}.insert(make\_pair(p, \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}[p]));
+58           \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}.erase(p);
+59         \}
+60       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a4dedcdcfe3d1769d6d2106d9fb2f7e51}\label{class_usuario_a4dedcdcfe3d1769d6d2106d9fb2f7e51}} 
+\index{Usuario@{Usuario}!agregar\+\_\+problema\+\_\+disp@{agregar\+\_\+problema\+\_\+disp}}
+\index{agregar\+\_\+problema\+\_\+disp@{agregar\+\_\+problema\+\_\+disp}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{agregar\+\_\+problema\+\_\+disp()}{agregar\_problema\_disp()}}
+{\footnotesize\ttfamily void Usuario\+::agregar\+\_\+problema\+\_\+disp (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Agrega un problema con identificador p como enviable a un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito pasa a tener el problema p como enviable 
+\end{DoxyPostcond}
+
+
+Definición en la línea 66 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+66                                                          \{
+67         \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}.insert(make\_pair(p,0));
+68       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a2db0039da08a135391248e34343d1ebd}\label{class_usuario_a2db0039da08a135391248e34343d1ebd}} 
+\index{Usuario@{Usuario}!fin\+\_\+curso@{fin\+\_\+curso}}
+\index{fin\+\_\+curso@{fin\+\_\+curso}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{fin\+\_\+curso()}{fin\_curso()}}
+{\footnotesize\ttfamily void Usuario\+::fin\+\_\+curso (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desinscribe un usuario del curso al que está inscrito. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito está inscrito a un curso actualmente 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito deja de estar inscrito al curso 
+\end{DoxyPostcond}
+
+
+Definición en la línea 74 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+74                               \{
+75         \mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}} = 0;
+76       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a35628c962b0db48ebcb85cd2eb186894}\label{class_usuario_a35628c962b0db48ebcb85cd2eb186894}} 
+\index{Usuario@{Usuario}!esta\+\_\+inscrito@{esta\+\_\+inscrito}}
+\index{esta\+\_\+inscrito@{esta\+\_\+inscrito}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{esta\+\_\+inscrito()}{esta\_inscrito()}}
+{\footnotesize\ttfamily bool Usuario\+::esta\+\_\+inscrito (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consulta si un usuario está inscrito en algun curso. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve cierto si el parámetro implícito está inscrito a un curso; falso en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 85 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+85                                         \{
+86         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}} != 0) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+87         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+88       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_aa8b3fb5f9ab3b36a2173b32b265f19c5}\label{class_usuario_aa8b3fb5f9ab3b36a2173b32b265f19c5}} 
+\index{Usuario@{Usuario}!curso\+\_\+usuario@{curso\+\_\+usuario}}
+\index{curso\+\_\+usuario@{curso\+\_\+usuario}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{curso\+\_\+usuario()}{curso\_usuario()}}
+{\footnotesize\ttfamily int Usuario\+::curso\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Devuelve el identificador del curso al que está inscrito un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve el identificador del curso al que está inscrito el parámetro implícito; si no está inscrito devuelve zero 
+\end{DoxyPostcond}
+
+
+Definición en la línea 95 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+95                                        \{
+96         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}};
+97       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a6f9608eac6a6a05d850dcad07bdf37f3}\label{class_usuario_a6f9608eac6a6a05d850dcad07bdf37f3}} 
+\index{Usuario@{Usuario}!ha\+\_\+resuelto\+\_\+problema@{ha\+\_\+resuelto\+\_\+problema}}
+\index{ha\+\_\+resuelto\+\_\+problema@{ha\+\_\+resuelto\+\_\+problema}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{ha\+\_\+resuelto\+\_\+problema()}{ha\_resuelto\_problema()}}
+{\footnotesize\ttfamily bool Usuario\+::ha\+\_\+resuelto\+\_\+problema (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption}) const}
+
+
+
+Comprueba si un usuario ha resuelto un problema con identificador p. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve cierto si el parámetro implícito ha resuelto el problema p; falso en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 104 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+104                                                               \{
+105         map<string,int>::const\_iterator it = \mbox{\hyperlink{class_usuario_ae614e565ce48a314a1e2b05beee8567b}{presueltos}}.find(p);
+106         \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_usuario_ae614e565ce48a314a1e2b05beee8567b}{presueltos}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+107         \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+108       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_aae8ff05308f5cc1e5f4267c577da386e}\label{class_usuario_aae8ff05308f5cc1e5f4267c577da386e}} 
+\index{Usuario@{Usuario}!ha\+\_\+terminado@{ha\+\_\+terminado}}
+\index{ha\+\_\+terminado@{ha\+\_\+terminado}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{ha\+\_\+terminado()}{ha\_terminado()}}
+{\footnotesize\ttfamily bool Usuario\+::ha\+\_\+terminado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Comprueba si un usuario ha terminado el curso al que está inscrito. 
+
+\begin{DoxyPrecond}{Precondición}
+El parámetro implícito está inscrito a un curso 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Devuelve cierto si el parámetro implícito ha completado el curso al que está inscrito; falso en caso contrario 
+\end{DoxyPostcond}
+
+
+Definición en la línea 115 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+115                                        \{
+116         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}.empty();
+117       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}\label{class_usuario_a11b719ee95e8089a4f34c172c81f2a5b}} 
+\index{Usuario@{Usuario}!problemas\+\_\+resueltos@{problemas\+\_\+resueltos}}
+\index{problemas\+\_\+resueltos@{problemas\+\_\+resueltos}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{problemas\+\_\+resueltos()}{problemas\_resueltos()}}
+{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+resueltos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime los identificadores de los problemas solucionados correctamente por el usuario y el nº de envios realizado por cada problema. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime en orden creciente los identificadores de los problemas solucionados correctamente por el parámetro implícito y el nº de envios realizado por cada problema 
+\end{DoxyPostcond}
+
+
+Definición en la línea 127 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+127                                               \{
+128         \textcolor{keywordflow}{for} (map<string,int>::const\_iterator it = \mbox{\hyperlink{class_usuario_ae614e565ce48a314a1e2b05beee8567b}{presueltos}}.begin(); it != 
+      \mbox{\hyperlink{class_usuario_ae614e565ce48a314a1e2b05beee8567b}{presueltos}}.end(); ++it) \{
+129           cout << it->first << \textcolor{stringliteral}{"("} << it->second << \textcolor{stringliteral}{")"} << endl;
+130         \}
+131       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}\label{class_usuario_a79c8b5d178c8cfe7604210dc38d41fa1}} 
+\index{Usuario@{Usuario}!problemas\+\_\+enviables@{problemas\+\_\+enviables}}
+\index{problemas\+\_\+enviables@{problemas\+\_\+enviables}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{problemas\+\_\+enviables()}{problemas\_enviables()}}
+{\footnotesize\ttfamily void Usuario\+::problemas\+\_\+enviables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime los identificadores de los problemas enviables por el usuario y el nº de envios que ha hecho de cada uno. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime en orden creciente los identificadores de los problemas enviables por el parámetro implícito y el nº de envios $>$= 0 que ha realizado por cada uno. Si el usuario no está inscrito en ningun curso se imprime un error 
+\end{DoxyPostcond}
+
+
+Definición en la línea 140 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+140                                               \{
+141         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}} != 0) \{
+142           \textcolor{keywordflow}{for} (map<string,int>::const\_iterator it = \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}.begin(); it != \mbox{\hyperlink{class_usuario_a4402178ca5b057733c675e3849718e96}{disp}}.end(); ++it) \{
+143             cout << it->first << \textcolor{stringliteral}{"("} << it->second << \textcolor{stringliteral}{")"} << endl;
+144           \}
+145         \}
+146         \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: usuario no inscrito en ningun curso"} << endl;
+147       \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}\label{class_usuario_a01715cdd7442952ccb578cd7dfa85a09}} 
+\index{Usuario@{Usuario}!escribir\+\_\+usuario@{escribir\+\_\+usuario}}
+\index{escribir\+\_\+usuario@{escribir\+\_\+usuario}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{escribir\+\_\+usuario()}{escribir\_usuario()}}
+{\footnotesize\ttfamily void Usuario\+::escribir\+\_\+usuario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Imprime un usuario. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Imprime el nº de envios totales, el nº de problemas que ha resuelto satisfactoriamente, el nº de problemas que ha intentado y el identificador del curso al que está inscrito o un cero si no está inscrito en ninguno 
+\end{DoxyPostcond}
+
+
+Definición en la línea 155 del archivo Usuario.\+cc.
+
+
+\begin{DoxyCode}
+155                                            \{
+156         cout << \textcolor{stringliteral}{"("} << \mbox{\hyperlink{class_usuario_a485a741c0646e6414bd6cf669a77fc9c}{envios}} << \textcolor{stringliteral}{","} << \mbox{\hyperlink{class_usuario_a6d7fd52e0625b61d324922bf4783435e}{correctos}} << \textcolor{stringliteral}{","} << \mbox{\hyperlink{class_usuario_adff16a149798e94b0747e7dc1bd85107}{pint}} << \textcolor{stringliteral}{","} << 
+      \mbox{\hyperlink{class_usuario_aa767fe2d1198f2c97791073bc55803e7}{curso}} << \textcolor{stringliteral}{")"} << endl;
+157       \}
+\end{DoxyCode}
+
+
+\subsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_usuario_adff16a149798e94b0747e7dc1bd85107}\label{class_usuario_adff16a149798e94b0747e7dc1bd85107}} 
+\index{Usuario@{Usuario}!pint@{pint}}
+\index{pint@{pint}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{pint}{pint}}
+{\footnotesize\ttfamily int Usuario\+::pint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 32 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_a6d7fd52e0625b61d324922bf4783435e}\label{class_usuario_a6d7fd52e0625b61d324922bf4783435e}} 
+\index{Usuario@{Usuario}!correctos@{correctos}}
+\index{correctos@{correctos}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{correctos}{correctos}}
+{\footnotesize\ttfamily int Usuario\+::correctos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 33 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_a485a741c0646e6414bd6cf669a77fc9c}\label{class_usuario_a485a741c0646e6414bd6cf669a77fc9c}} 
+\index{Usuario@{Usuario}!envios@{envios}}
+\index{envios@{envios}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{envios}{envios}}
+{\footnotesize\ttfamily int Usuario\+::envios\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 34 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_aa767fe2d1198f2c97791073bc55803e7}\label{class_usuario_aa767fe2d1198f2c97791073bc55803e7}} 
+\index{Usuario@{Usuario}!curso@{curso}}
+\index{curso@{curso}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{curso}{curso}}
+{\footnotesize\ttfamily int Usuario\+::curso\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 35 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_ae614e565ce48a314a1e2b05beee8567b}\label{class_usuario_ae614e565ce48a314a1e2b05beee8567b}} 
+\index{Usuario@{Usuario}!presueltos@{presueltos}}
+\index{presueltos@{presueltos}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{presueltos}{presueltos}}
+{\footnotesize\ttfamily map$<$string, int$>$ Usuario\+::presueltos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 36 del archivo Usuario.\+hh.
+
+\mbox{\Hypertarget{class_usuario_a4402178ca5b057733c675e3849718e96}\label{class_usuario_a4402178ca5b057733c675e3849718e96}} 
+\index{Usuario@{Usuario}!disp@{disp}}
+\index{disp@{disp}!Usuario@{Usuario}}
+\subsubsection{\texorpdfstring{disp}{disp}}
+{\footnotesize\ttfamily map$<$string, int$>$ Usuario\+::disp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definición en la línea 37 del archivo Usuario.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_usuario_8hh}{Usuario.\+hh}}\item 
+\mbox{\hyperlink{_usuario_8cc}{Usuario.\+cc}}\end{DoxyCompactItemize}

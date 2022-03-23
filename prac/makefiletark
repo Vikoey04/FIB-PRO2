@@ -1,0 +1,2 @@
+practica.tar: Cjt_cursos.hh Cjt_problemas.hh Cjt_sesiones.hh Cjt_usuarios.hh Curso.hh Problema.hh Sesion.hh Usuario.hh Cjt_cursos.cc Cjt_problemas.cc Cjt_sesiones.cc Cjt_usuarios.cc Curso.cc Problema.cc Sesion.cc Usuario.cc program.cc Makefile
+	tar -cvf practica.tar Cjt_cursos.hh Cjt_problemas.hh Cjt_sesiones.hh Cjt_usuarios.hh Curso.hh Problema.hh Sesion.hh Usuario.hh Cjt_cursos.cc Cjt_problemas.cc Cjt_sesiones.cc Cjt_usuarios.cc Curso.cc Problema.cc Sesion.cc Usuario.cc program.cc Makefile

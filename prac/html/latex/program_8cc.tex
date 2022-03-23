@@ -1,0 +1,188 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+Dependencia gráfica adjunta para program.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 34 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+34            \{
+35   \mbox{\hyperlink{class_cjt__problemas}{Cjt\_problemas}} problems;
+36   problems.\mbox{\hyperlink{class_cjt__problemas_a38d418d08be011f8cfbdfdac1ad2451a}{leer\_problemas}}(); \textcolor{comment}{//lectuda inicial de problemas}
+37   \mbox{\hyperlink{class_cjt__sesiones}{Cjt\_sesiones}} sesiones;
+38   sesiones.\mbox{\hyperlink{class_cjt__sesiones_ac550e55acf1c249058d274214ba8f655}{leer\_sesiones}}(); \textcolor{comment}{//lectura inicial de sesiones}
+39   \mbox{\hyperlink{class_cjt__cursos}{Cjt\_cursos}} cursos;
+40   cursos.\mbox{\hyperlink{class_cjt__cursos_a71a9a083e2abceee34329462a804637a}{leer\_cursos}}(sesiones); \textcolor{comment}{//lectura inicial de cursos}
+41   \mbox{\hyperlink{class_cjt__usuarios}{Cjt\_usuarios}} users;
+42   users.\mbox{\hyperlink{class_cjt__usuarios_aeb27ae7d46e9b78e2d477df74461bc68}{leer\_usuarios}}(); \textcolor{comment}{//lectura inicial de usuarios}
+43 
+44   \textcolor{keywordtype}{int} c; \textcolor{comment}{//IDENTIFICADOR Curso}
+45   \textcolor{keywordtype}{string} p, s, u; \textcolor{comment}{//IDENTIFICADORES Problema, Sesion y Usuario respectivamente}
+46 
+47   \textcolor{keywordtype}{string} op; \textcolor{comment}{//CODIGO DE OPERACIÓN}
+48   \textcolor{keywordflow}{while} (cin >> op and op != \textcolor{stringliteral}{"fin"}) \{
+49 
+50     \textcolor{comment}{//1- nuevo\_problema}
+51     \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"np"} or op == \textcolor{stringliteral}{"nuevo\_problema"})\{
+52       cin >> p;
+53       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << p << endl;
+54       problems.\mbox{\hyperlink{class_cjt__problemas_a6c84adcab542d776e02f851eb9d3da82}{nuevo\_problema}}(p);
+55     \}
+56 
+57     \textcolor{comment}{//2- nueva\_sesion}
+58     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"ns"} or op == \textcolor{stringliteral}{"nueva\_sesion"})\{
+59       cin >> s;
+60       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << s << endl;
+61       sesiones.\mbox{\hyperlink{class_cjt__sesiones_a7436186b6a6b34354ab5303f6b8bcfa9}{nueva\_sesion}}(s);
+62     \}
+63 
+64     \textcolor{comment}{//3- nuevo\_curso}
+65     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"nc"} or op == \textcolor{stringliteral}{"nuevo\_curso"})\{
+66       cout << \textcolor{stringliteral}{"#"} << op << endl;
+67       cursos.\mbox{\hyperlink{class_cjt__cursos_ae2e0a96f014dda94b0d8465838cf14b6}{nuevo\_curso}}(sesiones);
+68     \}
+69 
+70     \textcolor{comment}{//4- alta\_usuario}
+71     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"a"} or op == \textcolor{stringliteral}{"alta\_usuario"})\{
+72       cin >> u;
+73       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << endl;
+74       users.\mbox{\hyperlink{class_cjt__usuarios_af2bc90f54125530ce07dde609dfbe43b}{alta\_usuario}}(u);
+75     \}
+76 
+77     \textcolor{comment}{//5- baja\_usuario}
+78     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"b"} or op == \textcolor{stringliteral}{"baja\_usuario"})\{
+79       cin >> u;
+80       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << endl;
+81       users.\mbox{\hyperlink{class_cjt__usuarios_a318dcc3682784e73e0fe98ddbf39350c}{baja\_usuario}}(u, cursos);
+82     \}
+83 
+84     \textcolor{comment}{//6- inscribir\_curso}
+85     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"i"} or op == \textcolor{stringliteral}{"inscribir\_curso"})\{
+86       cin >> u >> c;
+87       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << \textcolor{stringliteral}{" "} << c << endl;
+88       users.\mbox{\hyperlink{class_cjt__usuarios_a94946c0533b04337bee7395f1dac0366}{inscribir\_curso}}(u, c, cursos, sesiones);
+89     \}
+90 
+91     \textcolor{comment}{// 7- curso\_usuario}
+92     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"cu"} or op == \textcolor{stringliteral}{"curso\_usuario"})\{
+93       cin >> u;
+94       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << endl;
+95       users.\mbox{\hyperlink{class_cjt__usuarios_a0a29517de316ac00a23f26df00ef779b}{curso\_usuario}}(u);
+96     \}
+97 
+98     \textcolor{comment}{//8- sesion\_problema}
+99     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"sp"} or op == \textcolor{stringliteral}{"sesion\_problema"})\{
+100       cin >> c >> p;
+101       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << c << \textcolor{stringliteral}{" "} << p << endl;
+102       \textcolor{keywordflow}{if} (problems.\mbox{\hyperlink{class_cjt__problemas_a90b230192705dd6f2e15fb10514a5814}{existe\_problema}}(p)) \{
+103         \textcolor{keywordflow}{if} (cursos.\mbox{\hyperlink{class_cjt__cursos_aed873ef8285d1f33c391bd4d808185de}{existe\_curso}}(c)) \{
+104           \textcolor{keywordflow}{if} (cursos.\mbox{\hyperlink{class_cjt__cursos_a7b2a3da42d49f10bd6413fa00dbe9012}{existe\_problema}}(p, c)) \{
+105             cout << cursos.\mbox{\hyperlink{class_cjt__cursos_acc9074c9338d31947bdd84e3498580be}{sesion\_problema}}(c, p) << endl;
+106           \}
+107           \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: el problema no pertenece al curso"} << endl;
+108         \}
+109         \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: el curso no existe"} << endl;
+110       \}
+111       \textcolor{keywordflow}{else} cout << \textcolor{stringliteral}{"error: el problema no existe"} << endl;
+112     \}
+113 
+114     \textcolor{comment}{//9- problemas\_resueltos}
+115     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"pr"} or op == \textcolor{stringliteral}{"problemas\_resueltos"})\{
+116       cin >> u;
+117       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << endl;
+118       users.\mbox{\hyperlink{class_cjt__usuarios_a08ce8035512646dec31f4959dc8aa891}{problemas\_resueltos}}(u);
+119     \}
+120 
+121     \textcolor{comment}{//10- problemas\_enviables}
+122     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"pe"} or op == \textcolor{stringliteral}{"problemas\_enviables"})\{
+123       cin >> u;
+124       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << endl;
+125       users.\mbox{\hyperlink{class_cjt__usuarios_a60b4396cdd65a2aa4b7a8706dabbe08b}{problemas\_enviables}}(u);
+126     \}
+127     
+128     \textcolor{comment}{//11- envio}
+129     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"e"} or op == \textcolor{stringliteral}{"envio"})\{
+130       \textcolor{keywordtype}{int} nota;
+131       cin >> u >> p >> nota;
+132       \textcolor{keywordtype}{bool} r = \textcolor{keyword}{true};
+133       \textcolor{keywordflow}{if} (nota == 0) r = \textcolor{keyword}{false};
+134       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << \textcolor{stringliteral}{" "} << p << \textcolor{stringliteral}{" "} << nota << endl;
+135       users.\mbox{\hyperlink{class_cjt__usuarios_ac4e3616bd8af5d118d4039d203805e76}{envio}}(u, p, r, problems, sesiones, cursos);
+136     \}
+137     
+138     \textcolor{comment}{//12- listar\_problemas}
+139     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"lp"} or op == \textcolor{stringliteral}{"listar\_problemas"})\{
+140       cout << \textcolor{stringliteral}{"#"} << op << endl;
+141       problems.\mbox{\hyperlink{class_cjt__problemas_a4cc09ed948f0315d5257d0d3a11e4dd5}{listar\_problemas}}();
+142     \}
+143 
+144     \textcolor{comment}{//escribir\_problema}
+145     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"ep"} or op == \textcolor{stringliteral}{"escribir\_problema"})\{
+146       cin >> p;
+147       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << p << endl;
+148       problems.\mbox{\hyperlink{class_cjt__problemas_a4fbbf5935069783a5ced92c5b169c330}{escribir\_problema}}(p);
+149     \}
+150 
+151     \textcolor{comment}{//13- listar\_sesiones}
+152     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"ls"} or op == \textcolor{stringliteral}{"listar\_sesiones"})\{
+153       cout << \textcolor{stringliteral}{"#"} << op << endl;
+154       sesiones.\mbox{\hyperlink{class_cjt__sesiones_a58e65694f1e4b544ae3c3e85cf329eeb}{listar\_sesiones}}();
+155     \}
+156 
+157     \textcolor{comment}{//escribir\_sesion}
+158     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"es"} or op == \textcolor{stringliteral}{"escribir\_sesion"})\{
+159       cin >> s;
+160       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << s << endl;
+161       sesiones.\mbox{\hyperlink{class_cjt__sesiones_ab3d1427eaac58e65fa341d60f9e2a3b3}{escribir\_sesion}}(s);
+162     \}
+163 
+164     \textcolor{comment}{//14- listar\_cursos}
+165     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"lc"} or op == \textcolor{stringliteral}{"listar\_cursos"})\{
+166       cout << \textcolor{stringliteral}{"#"} << op << endl;
+167       cursos.\mbox{\hyperlink{class_cjt__cursos_abba27f9593cae77bf02909a06454ec43}{listar\_cursos}}();
+168     \}
+169 
+170     \textcolor{comment}{//escribir\_curso}
+171     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"ec"} or op == \textcolor{stringliteral}{"escribir\_curso"})\{
+172       cin >> c;
+173       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << c << endl;
+174       cursos.\mbox{\hyperlink{class_cjt__cursos_a6c98d2f0a31253b84dc8b4a0ea48c348}{escribir\_curso}}(c);
+175     \}
+176 
+177     \textcolor{comment}{//15- listar\_usuarios}
+178     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"lu"} or op == \textcolor{stringliteral}{"listar\_usuarios"})\{
+179       cout << \textcolor{stringliteral}{"#"} << op << endl;
+180       users.\mbox{\hyperlink{class_cjt__usuarios_adb9a7441da7fb87a524142aaf6e61853}{listar\_usuarios}}();
+181     \}
+182 
+183     \textcolor{comment}{//escribir\_usuario}
+184     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (op == \textcolor{stringliteral}{"eu"} or op == \textcolor{stringliteral}{"escribir\_usuario"})\{
+185       cin >> u;
+186       cout << \textcolor{stringliteral}{"#"} << op << \textcolor{stringliteral}{" "} << u << endl;
+187       users.\mbox{\hyperlink{class_cjt__usuarios_abf4abc6a1349c504bd0628cfe665df39}{escribir\_usuario}}(u);
+188     \}
+189   \}
+190 \}
+\end{DoxyCode}
