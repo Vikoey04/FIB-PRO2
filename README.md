@@ -11,7 +11,7 @@
 | Tipus| Nota automàtica | Nota manual | Competència Transversal |
 -- | :--: | :--: | :--:
 | PRÀCTICA | **10** | **9** | **A** |
-| EXAMEN PRÀCTICA | **9** | Només hi ha automàtica | Només hi ha automàtica |
+| EXAMEN PRÀCTICA | **10** | Només hi ha automàtica | Només hi ha automàtica |
 
 
 
