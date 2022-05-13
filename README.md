@@ -1,9 +1,19 @@
 # PRO2 - Programació 2 - FIB
-## Jordi Soley
+
 
 - Diapositives de Teoria [(PDF)](diapositives-teoria-pro2.pdf)
-- Pràctica de Pro2 (Quadrimestre Primavera 2020-2021)
-- Examen de la Pràctica de Pro2 (Quadrimestre Primavera 2020-2021)
+
+## Pràctica de PRO2
+- Pràctica de Pro2 (Quadrimestre Primavera 2020-2021) [(Enunciat)](enunciado-practica-EVALUATOR-QP2021.pdf) [(La meva resolució)](/prac)
+- Examen de la Pràctica de Pro2 (Quadrimestre Primavera 2020-2021) [(La meva resolució)](/prac)
+
+#### *NOTES DE LA PRÀCTICA* 
+| Tipus| Nota automàtica | Nota manual | Competència Transversal |
+-- | :--: | :--: | :--:
+| PRÀCTICA | **10** | **9** | **A** |
+| EXAMEN PRÀCTICA | **9** | Només hi ha automàtica | Només hi ha automàtica |
+
+
 
 ## Links d'interès
 
